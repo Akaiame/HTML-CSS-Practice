@@ -30,12 +30,15 @@
     />
     <link rel="manifest" href="./site.webmanifest" />
     <style>
-      .rounded-img {
-        width: 50%;
-        border-radius: 50%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        padding: 0.6em;
-        margin-bottom: 1em;
+      .card {
+        border-radius: 2em;
+        text-align: center;
+      }
+      .card:hover {
+        background-color: azure;
+      }
+      .card a {
+        border-radius: 2em;
       }
     </style>
   </head>
@@ -60,40 +63,59 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link"
                 aria-current="page"
                 href="/HTML practice/index.html"
                 >Барсик</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="food.html">Любимая еда</a>
+              <a class="nav-link active" href="food.html">Любимая еда</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container text-center my-5">
-      <div class="row">
-        <div class="col-lg-6 mx-auto">
-          <img class="rounded-img" src="cat.jpg" alt="Барсик" />
-          <h1 class="fw-light">Барсик</h1>
-          <p class="lead text-muted">
-            Барсик любит вкусно покушать! Барсик в меру ласковый, в меру
-            активный и в меру упитанный кот, в котором очень много благородства
-            и достоинства.
-          </p>
-          <a
-            href="https://ru.wiktionary.org/wiki/%D0%91%D0%B0%D1%80%D1%81%D0%B8%D0%BA"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            Происхождение
-          </a>
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img src="viskas.png" class="card-img-top" alt="Image there" />
+            <div class="card-body">
+              <h5 class="card-title">Корм вискас</h5>
+              <p class="card-text">
+                Очень вкусный корм для барсика, и не только.
+              </p>
+              <a href="#" class="btn btn-primary">Купить!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="brit.png" class="card-img-top" alt="Image there" />
+            <div class="card-body">
+              <h5 class="card-title">Корм брит</h5>
+              <p class="card-text">
+                Очень вкусный корм для барсика, и не только.
+              </p>
+              <a href="#" class="btn btn-primary">Купить!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="pf.png" class="card-img-top" alt="Image there" />
+            <div class="card-body">
+              <h5 class="card-title">Корм перфект фит</h5>
+              <p class="card-text">
+                Очень вкусный корм для барсика, и не только.
+              </p>
+              <a href="#" class="btn btn-primary">Купить!</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
